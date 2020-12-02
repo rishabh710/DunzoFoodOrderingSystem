@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="0dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/background"
+            android:id="@+id/food_image"
+            android:scaleType="centerCrop"/>
+        
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:id="@+id/food_name"
+                android:text="Name of Food"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/fav"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tint="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:weightSum="10"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/food_price"
+                android:text="₹100"
+                android:gravity="top"
+                android:textSize="25sp"
+                android:layout_weight="9"/>
+
+            <ImageView
+                android:id="@+id/btn_quick_cart"
+                android:src="@drawable/ic_baseline_add_shopping_cart_24"
+                android:layout_marginRight="30dp"
+                android:scaleType="fitCenter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tint="@color/colorAccent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

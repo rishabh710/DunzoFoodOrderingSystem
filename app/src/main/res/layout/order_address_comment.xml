@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery to"
+            android:textSize="18sp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdiHomeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Address" />
+        </RadioGroup>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="24sp"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comment"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="24sp"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment by"
+            android:textSize="18sp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdiCOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash On Delivery" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
