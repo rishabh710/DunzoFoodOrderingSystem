@@ -1,3 +1,3 @@
 # DunzoFoodOrderingSystem
 
-It is an Online Food Ordering Android Application
+It is an Client Side Online Food Ordering Android Application
