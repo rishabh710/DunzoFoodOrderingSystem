@@ -153,7 +153,7 @@ public class OrderStatus extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        if (adapter == null) {
+        if (adapter != null) {
             adapter.startListening();
         }
     }
